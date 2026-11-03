@@ -1,1 +1,52 @@
 # meus-programas-portugol
+
+programa {
+    // Estrutura para controlar as repetições de um algoritmo
+
+    funcao inicio() {
+        inteiro resposta
+        resposta = 1
+
+        enquanto(resposta == 1) {
+            // solução do algoritmo aqui!
+
+            inteiro x, num
+            escreva("Digite um Numero")
+            leia(num)
+
+            x = 1
+
+            se(num >= 30) {
+                enquanto(x <= 5) {
+                    num++
+
+                    se(num % 2 == 0) {
+                        escreva(num + " ")
+                        x++
+                    }
+                }
+            } senao {
+                enquanto(x <= 5) {
+                    num--
+
+                    se(num % 2 == 1) {
+                        escreva(num + " ")
+                        x++
+                    }
+                }
+            }
+
+            // solução do algoritmo termina aqui
+
+            // FINALIZAÇÃO DO ALGORITMO
+            escreva("Deseja continuar? \n1 - SIM \n2 - NÃO\n")
+            leia(resposta)
+
+            enquanto((resposta != 1) e (resposta != 2)) {
+                escreva("Errado! Digite 1 - sim / 2 - não")
+                leia(resposta)
+            }
+        }
+    }
+}
+na
